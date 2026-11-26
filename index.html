@@ -56,24 +56,28 @@
     gtag('config', 'G-N2728P1L1K', { 'anonymize_ip': true });
   </script>
 
-  <!-- Freshworks CRM Tracking & Auto-Popup Chat Widget (15 Seconds) -->
+  <!-- Freshworks CRM Tracking & Auto-Popup Chat Widget (20 Seconds) -->
   <script src="https://eu.fw-cdn.com/12873460/840461.js" chat="true"></script>
   <script>
     window.fcSettings = {
       onInit: function() {
         if (window.fcWidget) {
-          window.fcWidget.setExternalId("dach.b2b.visitor");
-          window.fcWidget.user.setFirstName("DACH");
+          window.fcWidget.setExternalId("samt.ag.visitor");
+          window.fcWidget.user.setFirstName("SAMT AG Website");
           window.fcWidget.user.setEmail("interessent@samt.ag");
           window.fcWidget.user.setProperties({
             cf_plan: "DACH Enterprise",
-            cf_status: "Active"
+            cf_status: "Active",
+            website: "SAMT AG (samt.ag)",
+            source_site: "SAMT AG Website",
+            page_url: window.location.href,
+            language: "DE"
           });
           setTimeout(function() {
             if (typeof window.fcWidget.open === 'function') {
               window.fcWidget.open();
             }
-          }, 15000);
+          }, 20000);
         }
       }
     };
