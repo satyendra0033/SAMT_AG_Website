@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Performance Marketing: Google Ads & Clarity Attribution | SAMT AG</title>
+  <meta name="description" content="Predictable B2B client acquisition via Google & LinkedIn Ads. Choose between a 50% profit share or our transparent price calculator starting from €2,000 ad spend.">
+  <meta name="google-site-verification" content="-_qTnezSAefN8ngMKI6Iq4fNdoTqiXKNZrGbb-Ur3Ew" />
+  
+  <!-- Favicons from samt.ag -->
+  <link rel="icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-180x180.png" />
+  
+  <!-- Fonts: Poppins (Headings from samt.ag) & Inter / Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS with samt.ag authentic color palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            samt: {
+              navy: '#142630',         // Dominant Swiss Rhine Navy background from samt.ag
+              navyDark: '#0d1a22',     // Deep page background
+              card: '#1a303d',         // Elevated card background
+              cardHover: '#203947',    // Card hover state
+              blue: '#2ea3f2',         // Official samt.ag primary accent (cerulean blue)
+              blueHover: '#1b87d2',    // Primary button hover
+              green: '#8dc63f',        // Official samt.ag lime/apple accent
+              greenHover: '#7cb534',   // Secondary button hover
+              border: 'rgba(46, 163, 242, 0.22)',
+              borderSubtle: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2728P1L1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N2728P1L1K', { 'anonymize_ip': true });
+  </script>
+
+  <!-- Freshworks CRM Tracking & Auto-Popup Chat Widget (15 Seconds) -->
+  <script src="https://eu.fw-cdn.com/12873460/840461.js" chat="true"></script>
+  <script>
+    window.fcSettings = {
+      onInit: function() {
+        if (window.fcWidget) {
+          window.fcWidget.setExternalId("dach.b2b.visitor");
+          window.fcWidget.user.setFirstName("DACH");
+          window.fcWidget.user.setEmail("interessent@samt.ag");
+          window.fcWidget.user.setProperties({
+            cf_plan: "DACH Enterprise",
+            cf_status: "Active"
+          });
+          setTimeout(function() {
+            if (typeof window.fcWidget.open === 'function') {
+              window.fcWidget.open();
+            }
+          }, 15000);
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-samt-navyDark text-slate-100 font-sans antialiased selection:bg-samt-blue selection:text-white">
+  
+<div class="bg-samt-navyDark border-b border-samt-blue/30 py-2.5 px-4 sticky top-0 z-[60] text-xs shadow-md">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center space-x-2 text-slate-300">
+      <span class="inline-block w-2 h-2 rounded-full bg-samt-green animate-pulse"></span>
+      <span class="font-bold text-white font-poppins">Stitch Prototype:</span>
+      <span class="text-slate-400 hidden sm:inline">5 Connected Main Pages (DACH / EN)</span>
+    </div>
+    <div class="flex items-center space-x-1 sm:space-x-2">
+      <a href="index.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">1. Home</a>
+      <a href="akademie.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">2. Academy</a>
+      <a href="consulting.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">3. Club</a>
+      <a href="enterprise.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">4. Enterprise</a>
+      <a href="performance.html" class="px-2.5 py-1 rounded-md transition-all bg-samt-blue text-white font-bold shadow">5. Ads &amp; Calculator</a>
+    </div>
+  </div>
+</div>
+
+  
+<header class="w-full relative z-50 bg-samt-navy/80 backdrop-blur-md border-b border-white/10 px-6 lg:px-12 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Brand Logo: Official light logo from samt.ag -->
+    <a href="index.html" class="flex items-center space-x-3 group">
+      <img src="https://samt.ag/wp-content/uploads/samt-ag-light-logo.png" alt="SAMT AG" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" />
+    </a>
+
+    <!-- Center Navigation -->
+    <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-200">
+      <a href="akademie.html" class="hover:text-samt-blue transition-colors">Academy</a>
+      <a href="consulting.html" class="hover:text-samt-blue transition-colors">Club</a>
+      <a href="enterprise.html" class="hover:text-samt-blue transition-colors">Enterprise</a>
+      <a href="performance.html" class="text-samt-blue font-semibold border-b-2 border-samt-blue pb-1 transition-colors">Ads</a>
+      <a href="index.html#ueber-uns" class="hover:text-samt-blue transition-colors">About Us</a>
+    </nav>
+
+    <!-- Right Controls: Login, Language Dropdown & Primary CTA -->
+    <div class="flex items-center space-x-3 sm:space-x-4">
+      <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center text-xs font-semibold text-slate-300 hover:text-white transition-colors bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full border border-white/10">
+        <svg class="w-3.5 h-3.5 mr-1.5 text-samt-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+        Login
+      </a>
+
+      <!-- Language Dropdown -->
+      <div class="relative" id="langDropdownContainer">
+        <button type="button" onclick="document.getElementById('langDropdownMenu').classList.toggle('hidden')" class="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full border border-white/10 transition-colors focus:outline-none">
+          <svg class="w-3.5 h-3.5 text-samt-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>EN</span>
+          <svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="langDropdownMenu" class="hidden absolute right-0 mt-2 w-36 bg-samt-card border border-samt-border rounded-xl shadow-2xl py-1.5 z-50 backdrop-blur-md">
+          <a href="../performance.html" class="flex items-center justify-between px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+            <span>🇩🇪 Deutsch (DE)</span>
+          </a>
+          <a href="performance.html" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-samt-blue bg-samt-blue/10">
+            <span>🇬🇧 English (EN)</span>
+            <span>✓</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-samt-blue hover:bg-samt-blueHover text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg shadow-samt-blue/30 transition-all transform hover:-translate-y-0.5 font-poppins">
+        Book a Call
+        <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </div>
+</header>
+<script>
+  document.addEventListener('click', function(e) {
+    const container = document.getElementById('langDropdownContainer');
+    const menu = document.getElementById('langDropdownMenu');
+    if (container && menu && !container.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+</script>
+
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 px-6 sm:px-12 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center space-x-2 bg-samt-blue/15 border border-samt-blue/40 px-4 py-1.5 rounded-full text-samt-blue text-xs font-bold tracking-wider uppercase mb-6 font-poppins">
+      PILLAR 4: PERFORMANCE MARKETING &amp; SCALE
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl font-extrabold font-poppins text-white tracking-tight mb-6">
+      Performance Marketing with a True Value-Creation Guarantee.
+    </h1>
+
+    <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+      From strategic media planning and AI-powered customer journey analytics to profitable B2B campaign scaling.
+    </p>
+
+    <!-- The 2 Models Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left mb-16">
+      <div class="bg-samt-card border border-samt-border p-8 rounded-2xl shadow-lg">
+        <span class="text-xs font-bold text-samt-green uppercase tracking-widest font-poppins">Model 1</span>
+        <h3 class="text-xl font-bold text-white mt-1 mb-3 font-poppins">Pure Performance (Profit Share)</h3>
+        <p class="text-sm text-slate-300 mb-4">
+          For business models with a 100% measurable digital checkout: <strong>€0 monthly base retainer</strong>.
+        </p>
+        <div class="text-sm text-samt-green font-semibold">
+          50% profit share on incremental net profit generated compared to previous baseline campaigns.
+        </div>
+      </div>
+
+      <div class="bg-samt-card border border-samt-border p-8 rounded-2xl shadow-lg">
+        <span class="text-xs font-bold text-samt-blue uppercase tracking-widest font-poppins">Model 2</span>
+        <h3 class="text-xl font-bold text-white mt-1 mb-3 font-poppins">Dynamic Campaign Scale</h3>
+        <p class="text-sm text-slate-300 mb-4">
+          For B2B companies closing high-ticket deals via consultation &amp; phone sales: full pricing transparency.
+        </p>
+        <div class="text-sm text-slate-200 font-semibold">
+          Minimum ad spend from €2,000 / month (excluding unprofitable micro-budgets).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dynamic Price Calculator -->
+  <section class="py-12 px-6 sm:px-12 max-w-5xl mx-auto">
+    <div class="bg-samt-card border border-samt-border rounded-3xl p-8 sm:p-12 shadow-2xl">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-samt-blue uppercase tracking-widest font-poppins">Transparent B2B Calculator</span>
+        <h2 class="text-2xl sm:text-4xl font-bold font-poppins text-white mt-2">
+          Interactive Campaign Price Calculator
+        </h2>
+        <p class="text-sm text-slate-300 mt-3">
+          Calculate your monthly management fee based on your ad spend, channels, and service tier.
+        </p>
+      </div>
+
+      <!-- Controls Grid -->
+      <div class="space-y-8">
+        <!-- Budget Slider (Min 2000 €) -->
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-sm font-bold text-white">Monthly Ad Spend Budget:</label>
+            <span id="budgetValue" class="text-xl font-bold text-samt-blue font-poppins">€5,000</span>
+          </div>
+          <input type="range" id="budgetSlider" min="2000" max="35000" step="500" value="5000" class="w-full h-2 bg-samt-navyDark rounded-lg appearance-none cursor-pointer accent-[#2ea3f2]" />
+          <div class="flex justify-between text-xs text-slate-400 mt-2">
+            <span>€2,000 (Minimum Budget)</span>
+            <span>€10,000</span>
+            <span>€25,000</span>
+            <span>€35,000+</span>
+          </div>
+          <p class="text-xs text-amber-400/90 mt-2">
+            * Note: To ensure statistically valid B2B attribution, the minimum monthly ad spend is €2,000.
+          </p>
+        </div>
+
+        <!-- Channels Multi-Select -->
+        <div>
+          <label class="text-sm font-bold text-white block mb-3 font-poppins">Desired B2B Marketing Channels:</label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <label class="flex items-center p-4 bg-samt-navyDark border border-samt-blue/40 rounded-xl cursor-pointer">
+              <input type="checkbox" id="channelGoogle" checked disabled class="w-4 h-4 text-samt-blue rounded focus:ring-0">
+              <span class="ml-3 text-xs text-slate-200 font-medium">Google Search &amp; YouTube (Included)</span>
+            </label>
+            <label class="flex items-center p-4 bg-samt-navyDark border border-samt-border hover:border-samt-blue rounded-xl cursor-pointer transition">
+              <input type="checkbox" id="channelLinkedin" class="w-4 h-4 text-samt-blue rounded focus:ring-0">
+              <span class="ml-3 text-xs text-slate-200 font-medium">LinkedIn ABM (+€450)</span>
+            </label>
+            <label class="flex items-center p-4 bg-samt-navyDark border border-samt-border hover:border-samt-blue rounded-xl cursor-pointer transition">
+              <input type="checkbox" id="channelMeta" class="w-4 h-4 text-samt-blue rounded focus:ring-0">
+              <span class="ml-3 text-xs text-slate-200 font-medium">Meta Retargeting (+€350)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Service Level Toggle -->
+        <div>
+          <label class="text-sm font-bold text-white block mb-3 font-poppins">Service Tier:</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label class="flex items-start p-4 bg-samt-navyDark border border-samt-border rounded-xl cursor-pointer">
+              <input type="radio" name="serviceTier" id="tierStandard" value="0" checked class="mt-1 w-4 h-4 text-samt-blue focus:ring-0">
+              <div class="ml-3">
+                <div class="text-sm font-bold text-white font-poppins">Standard Management</div>
+                <div class="text-xs text-slate-400 mt-1">Weekly bid &amp; keyword optimization, monthly KPI reporting (Included)</div>
+              </div>
+            </label>
+            <label class="flex items-start p-4 bg-samt-navyDark border border-samt-blue/40 rounded-xl cursor-pointer">
+              <input type="radio" name="serviceTier" id="tierAdvanced" value="490" class="mt-1 w-4 h-4 text-samt-blue focus:ring-0">
+              <div class="ml-3">
+                <div class="text-sm font-bold text-white font-poppins">Advanced Clarity &amp; CRO (+€490)</div>
+                <div class="text-xs text-slate-400 mt-1">Bi-weekly video review calls, Clarity heatmap analysis, continuous conversion rate optimization</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Calculated Summary Box -->
+        <div class="border-t border-white/10 pt-8 mt-8 bg-samt-navyDark p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="space-y-1 text-center md:text-left">
+            <div class="text-xs text-slate-400">One-Time Setup (Tracking, Clarity &amp; Campaign Architecture): <span class="text-white font-semibold">€1,490 net</span></div>
+            <div class="text-xs text-slate-400">Monthly Management Fee:</div>
+            <div id="calculatedFee" class="text-3xl font-extrabold font-poppins text-samt-blue">€1,250 net / mo.</div>
+          </div>
+          <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="w-full md:w-auto inline-flex items-center justify-center bg-samt-blue hover:bg-samt-blueHover text-white font-bold text-sm px-8 py-4 rounded-full transition-all font-poppins">
+            Request Proposal →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slider = document.getElementById('budgetSlider');
+    const budgetVal = document.getElementById('budgetValue');
+    const chLinkedin = document.getElementById('channelLinkedin');
+    const chMeta = document.getElementById('channelMeta');
+    const tAdvanced = document.getElementById('tierAdvanced');
+    const feeOutput = document.getElementById('calculatedFee');
+
+    function calculate() {
+      const budget = parseInt(slider.value, 10);
+      budgetVal.innerText = '€' + budget.toLocaleString('en-US');
+
+      let baseFee = 0;
+      if (budget <= 5000) {
+        baseFee = 1250;
+      } else if (budget <= 10000) {
+        baseFee = 1750;
+      } else if (budget <= 25000) {
+        baseFee = Math.round(budget * 0.15);
+      } else {
+        baseFee = Math.round(budget * 0.12);
+      }
+
+      let extraChannels = 0;
+      if (chLinkedin.checked) extraChannels += 450;
+      if (chMeta.checked) extraChannels += 350;
+
+      let tierExtra = tAdvanced.checked ? 490 : 0;
+
+      const totalMonthly = baseFee + extraChannels + tierExtra;
+      feeOutput.innerText = '€' + totalMonthly.toLocaleString('en-US') + ' net / mo.';
+    }
+
+    slider.addEventListener('input', calculate);
+    chLinkedin.addEventListener('change', calculate);
+    chMeta.addEventListener('change', calculate);
+    document.querySelectorAll('input[name="serviceTier"]').forEach(r => r.addEventListener('change', calculate));
+    calculate();
+  </script>
+
+  
+<footer class="bg-samt-navyDark border-t border-samt-border pt-16 pb-12 px-6 sm:px-12 text-slate-400">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+    <div>
+      <div class="flex items-center space-x-3 mb-3">
+        <img src="https://samt.ag/wp-content/uploads/samt-ag-light-logo.png" alt="SAMT AG" class="h-8 w-auto object-contain" />
+      </div>
+      <p class="text-sm text-slate-400 max-w-lg leading-relaxed">
+        Systematic B2B sales scaling, CRM technology &amp; performance growth across the entire DACH region and beyond.
+      </p>
+      <p class="text-xs text-slate-500 mt-3 flex flex-wrap items-center gap-2">
+        <span>Support via website chat widget or exclusive WhatsApp group</span>
+        <span>•</span>
+        <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="text-samt-blue hover:underline">samt.learnhouse.io</a>
+      </p>
+    </div>
+    
+    <div class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-300 font-medium">
+      <a href="akademie.html" class="hover:text-samt-blue transition">Academy</a>
+      <a href="consulting.html" class="hover:text-samt-blue transition">Business Club</a>
+      <a href="enterprise.html" class="hover:text-samt-blue transition">Enterprise</a>
+      <a href="performance.html" class="hover:text-samt-blue transition">Ads &amp; Performance</a>
+      <a href="index.html#ueber-uns" class="hover:text-samt-blue transition">About Us</a>
+      <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="hover:text-samt-blue transition">Login</a>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+    <div>© 2025 SAMT AG. All rights reserved. | B2B Consulting &amp; Fulfillment since 2016</div>
+    <div class="flex items-center space-x-6">
+      <a href="#impressum" class="hover:text-slate-300 transition">Imprint</a>
+      <a href="#agb" class="hover:text-slate-300 transition">Terms</a>
+      <a href="#datenschutz" class="hover:text-slate-300 transition">Privacy</a>
+      <a href="#compliance" class="hover:text-slate-300 transition">Compliance</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

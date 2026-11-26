@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMT AG | Predictable B2B Growth & Scaling System</title>
+  <meta name="description" content="System, Technology & Sales from a single source: SAMT AG transforms B2B service providers & agencies in the DACH region into predictably scaling market leaders.">
+  <meta name="google-site-verification" content="-_qTnezSAefN8ngMKI6Iq4fNdoTqiXKNZrGbb-Ur3Ew" />
+  
+  <!-- Favicons from samt.ag -->
+  <link rel="icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://samt.ag/wp-content/uploads/cropped-favicon-samt-180x180.png" />
+  
+  <!-- Fonts: Poppins (Headings from samt.ag) & Inter / Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS with samt.ag authentic color palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            samt: {
+              navy: '#142630',         // Dominant Swiss Rhine Navy background from samt.ag
+              navyDark: '#0d1a22',     // Deep page background
+              card: '#1a303d',         // Elevated card background
+              cardHover: '#203947',    // Card hover state
+              blue: '#2ea3f2',         // Official samt.ag primary accent (cerulean blue)
+              blueHover: '#1b87d2',    // Primary button hover
+              green: '#8dc63f',        // Official samt.ag lime/apple accent
+              greenHover: '#7cb534',   // Secondary button hover
+              border: 'rgba(46, 163, 242, 0.22)',
+              borderSubtle: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2728P1L1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N2728P1L1K', { 'anonymize_ip': true });
+  </script>
+
+  <!-- Freshworks CRM Tracking & Auto-Popup Chat Widget (15 Seconds) -->
+  <script src="https://eu.fw-cdn.com/12873460/840461.js" chat="true"></script>
+  <script>
+    window.fcSettings = {
+      onInit: function() {
+        if (window.fcWidget) {
+          window.fcWidget.setExternalId("dach.b2b.visitor");
+          window.fcWidget.user.setFirstName("DACH");
+          window.fcWidget.user.setEmail("interessent@samt.ag");
+          window.fcWidget.user.setProperties({
+            cf_plan: "DACH Enterprise",
+            cf_status: "Active"
+          });
+          setTimeout(function() {
+            if (typeof window.fcWidget.open === 'function') {
+              window.fcWidget.open();
+            }
+          }, 15000);
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-samt-navyDark text-slate-100 font-sans antialiased selection:bg-samt-blue selection:text-white">
+  
+<div class="bg-samt-navyDark border-b border-samt-blue/30 py-2.5 px-4 sticky top-0 z-[60] text-xs shadow-md">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center space-x-2 text-slate-300">
+      <span class="inline-block w-2 h-2 rounded-full bg-samt-green animate-pulse"></span>
+      <span class="font-bold text-white font-poppins">Stitch Prototype:</span>
+      <span class="text-slate-400 hidden sm:inline">5 Connected Main Pages (DACH / EN)</span>
+    </div>
+    <div class="flex items-center space-x-1 sm:space-x-2">
+      <a href="index.html" class="px-2.5 py-1 rounded-md transition-all bg-samt-blue text-white font-bold shadow">1. Home</a>
+      <a href="akademie.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">2. Academy</a>
+      <a href="consulting.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">3. Club</a>
+      <a href="enterprise.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">4. Enterprise</a>
+      <a href="performance.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">5. Ads &amp; Calculator</a>
+    </div>
+  </div>
+</div>
+
+  
+<header class="w-full relative z-50 bg-samt-navy/80 backdrop-blur-md border-b border-white/10 px-6 lg:px-12 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Brand Logo: Official light logo from samt.ag -->
+    <a href="index.html" class="flex items-center space-x-3 group">
+      <img src="https://samt.ag/wp-content/uploads/samt-ag-light-logo.png" alt="SAMT AG" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" />
+    </a>
+
+    <!-- Center Navigation -->
+    <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-200">
+      <a href="akademie.html" class="hover:text-samt-blue transition-colors">Academy</a>
+      <a href="consulting.html" class="hover:text-samt-blue transition-colors">Club</a>
+      <a href="enterprise.html" class="hover:text-samt-blue transition-colors">Enterprise</a>
+      <a href="performance.html" class="hover:text-samt-blue transition-colors">Ads</a>
+      <a href="index.html#ueber-uns" class="hover:text-samt-blue transition-colors">About Us</a>
+    </nav>
+
+    <!-- Right Controls: Login, Language Dropdown & Primary CTA -->
+    <div class="flex items-center space-x-3 sm:space-x-4">
+      <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center text-xs font-semibold text-slate-300 hover:text-white transition-colors bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full border border-white/10">
+        <svg class="w-3.5 h-3.5 mr-1.5 text-samt-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+        Login
+      </a>
+
+      <!-- Language Dropdown -->
+      <div class="relative" id="langDropdownContainer">
+        <button type="button" onclick="document.getElementById('langDropdownMenu').classList.toggle('hidden')" class="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full border border-white/10 transition-colors focus:outline-none">
+          <svg class="w-3.5 h-3.5 text-samt-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>EN</span>
+          <svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="langDropdownMenu" class="hidden absolute right-0 mt-2 w-36 bg-samt-card border border-samt-border rounded-xl shadow-2xl py-1.5 z-50 backdrop-blur-md">
+          <a href="../index.html" class="flex items-center justify-between px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+            <span>🇩🇪 Deutsch (DE)</span>
+          </a>
+          <a href="index.html" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-samt-blue bg-samt-blue/10">
+            <span>🇬🇧 English (EN)</span>
+            <span>✓</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-samt-blue hover:bg-samt-blueHover text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg shadow-samt-blue/30 transition-all transform hover:-translate-y-0.5 font-poppins">
+        Book a Call
+        <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </div>
+</header>
+<script>
+  document.addEventListener('click', function(e) {
+    const container = document.getElementById('langDropdownContainer');
+    const menu = document.getElementById('langDropdownMenu');
+    if (container && menu && !container.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+</script>
+
+
+  <!-- Hero Section with Schaffhausen Dusk Panorama & samt.ag Navy Overlay -->
+  <section class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-20 px-6 sm:px-12 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://samt.ag/wp-content/uploads/Schaffhausen-1.jpg" alt="Schaffhausen Panorama" class="w-full h-full object-cover object-center filter brightness-[0.35] contrast-110 scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-b from-samt-navy/70 via-samt-navyDark/60 to-samt-navyDark"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <div class="inline-flex items-center space-x-2 bg-samt-blue/15 border border-samt-blue/40 px-4 py-1.5 rounded-full text-samt-blue text-xs font-bold tracking-wider uppercase mb-6 backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-samt-green animate-ping"></span>
+        <span>The B2B Scaling System for the DACH Mid-Market</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-poppins text-white tracking-tight leading-[1.12] mb-6">
+        Predictable B2B Growth:<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-samt-blue via-sky-300 to-samt-green">System, Technology and Sales</span> from a Single Source.
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+        We transform client acquisition, CRM processes, and performance marketing for established B2B service providers, agencies, and consultants into a highly profitable, integrated system.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center bg-samt-blue hover:bg-samt-blueHover text-white font-bold text-base px-8 py-4 rounded-full shadow-xl shadow-samt-blue/30 transition-all transform hover:-translate-y-1 font-poppins">
+          Book a Strategy Call
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+        <a href="#system" class="w-full sm:w-auto inline-flex items-center justify-center bg-samt-navy/80 hover:bg-samt-card text-slate-200 border border-samt-border font-semibold text-base px-8 py-4 rounded-full backdrop-blur-md transition-all font-poppins">
+          Discover the 4-Pillar System ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Bar -->
+  <section class="border-y border-samt-border bg-samt-navy/60 backdrop-blur-md py-6 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-3 border-r border-white/5 last:border-0">
+        <div class="text-samt-blue font-bold text-2xl font-poppins">100% B2B</div>
+        <div class="text-xs text-slate-300 mt-1">Pure B2B value creation for established companies</div>
+      </div>
+      <div class="p-3 border-r border-white/5 last:border-0">
+        <div class="text-samt-blue font-bold text-2xl font-poppins">50k → 250k €+</div>
+        <div class="text-xs text-slate-300 mt-1">Measurable scaling of monthly B2B revenues</div>
+      </div>
+      <div class="p-3 border-r border-white/5 last:border-0">
+        <div class="text-samt-green font-bold text-2xl font-poppins">Since 2016</div>
+        <div class="text-xs text-slate-300 mt-1">Consulting and advisory services since 2016</div>
+      </div>
+      <div class="p-3">
+        <div class="flex justify-center items-center mb-1">
+          <img src="https://samt.ag/wp-content/uploads/proven-expert-recommended-1.png" alt="ProvenExpert Top Rating" class="h-7 w-auto object-contain" />
+        </div>
+        <div class="text-xs text-slate-300">Highest client satisfaction in the B2B sector</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Section -->
+  <section class="py-24 px-6 sm:px-12 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-bold text-samt-blue uppercase tracking-widest font-poppins">Market Analysis &amp; Bottlenecks</span>
+      <h2 class="text-3xl sm:text-5xl font-bold font-poppins text-white tracking-tight mt-3">
+        Why traditional approaches in B2B sales hit their limits
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-samt-card border border-samt-border p-8 rounded-2xl hover:border-samt-blue/40 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center font-bold text-lg mb-6">1</div>
+        <h3 class="text-xl font-bold text-white mb-3 font-poppins">Founder Dependency</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          New clients arrive by chance through referrals. The managing director negotiates every deal personally and gets worn down by daily operational firefighting.
+        </p>
+      </div>
+
+      <div class="bg-samt-card border border-samt-border p-8 rounded-2xl hover:border-samt-blue/40 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg mb-6">2</div>
+        <h3 class="text-xl font-bold text-white mb-3 font-poppins">Isolated Silo Solutions</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Marketing agencies deliver clicks without CRM integration, sales trainers teach scripts without technical workflows, and IT consultants build software without a revenue focus.
+        </p>
+      </div>
+
+      <div class="bg-samt-card border border-samt-border p-8 rounded-2xl hover:border-samt-blue/40 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-samt-blue/10 border border-samt-blue/30 text-samt-blue flex items-center justify-center font-bold text-lg mb-6">3</div>
+        <h3 class="text-xl font-bold text-white mb-3 font-poppins">Shortage of Sales Talent</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Skilled setters and closers are hard to find, expensive to recruit, and frequently fail due to a lack of systematic onboarding and clear playbooks.
+        </p>
+      </div>
+    </div>
+
+    <!-- Solution Banner -->
+    <div class="bg-gradient-to-r from-samt-navy via-samt-card to-samt-navy border border-samt-border p-8 sm:p-12 rounded-3xl text-center max-w-4xl mx-auto shadow-2xl">
+      <h3 class="text-2xl sm:text-3xl font-bold text-white font-poppins mb-4">
+        The SAMT.AG Solution: The Integrated B2B Ecosystem
+      </h3>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        SAMT AG combines deep sales expertise, turnkey CRM &amp; AI technology, battle-tested process SOPs, and performance-based marketing into a closed-loop scaling engine.
+      </p>
+    </div>
+  </section>
+
+  <!-- The 4 Pillars Section (Fully Connected to subpages) -->
+  <section id="system" class="py-24 px-6 sm:px-12 bg-samt-navy/40 border-t border-samt-border">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-samt-blue uppercase tracking-widest font-poppins">The 4-Pillar System</span>
+        <h2 class="text-3xl sm:text-5xl font-bold font-poppins text-white tracking-tight mt-3">
+          Choose Your Lever for Predictable Scaling
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Pillar 1 -> Connected to akademie.html -->
+        <div class="bg-samt-card border border-samt-border hover:border-samt-blue transition-all p-8 rounded-2xl flex flex-col justify-between group shadow-lg">
+          <div>
+            <div class="text-xs font-bold text-samt-green uppercase tracking-wider mb-2 font-poppins">Pillar 1 • Academy</div>
+            <h3 class="text-2xl font-bold text-white mb-4 font-poppins group-hover:text-samt-blue transition-colors">Self-Paced Courses &amp; Team Certification</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              100% digital self-study programs &amp; standardized team training with certification exam. Focus: Outbound Cold Calling from 49 CHF/EUR. Instant access on samt.learnhouse.io.
+            </p>
+          </div>
+          <a href="akademie.html" class="inline-flex items-center justify-center bg-white/10 hover:bg-samt-blue hover:text-white text-white font-semibold text-xs py-3 px-4 rounded-xl transition-all font-poppins">
+            View &amp; Buy Courses →
+          </a>
+        </div>
+
+        <!-- Pillar 2 -> Connected to consulting.html -->
+        <div class="bg-samt-card border border-samt-border hover:border-samt-blue transition-all p-8 rounded-2xl flex flex-col justify-between group shadow-lg">
+          <div>
+            <div class="text-xs font-bold text-samt-blue uppercase tracking-wider mb-2 font-poppins">Pillar 2 • Business Club</div>
+            <h3 class="text-2xl font-bold text-white mb-4 font-poppins group-hover:text-samt-blue transition-colors">Group Consulting &amp; Code Library</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Collaborative expert consulting for all members, ideal training platform for upskilling internal teams, and an extensive n8n workflow &amp; script library.
+            </p>
+          </div>
+          <a href="consulting.html" class="inline-flex items-center justify-center bg-white/10 hover:bg-samt-blue hover:text-white text-white font-semibold text-xs py-3 px-4 rounded-xl transition-all font-poppins">
+            Explore Business Club →
+          </a>
+        </div>
+
+        <!-- Pillar 3 -> Connected to enterprise.html -->
+        <div class="bg-samt-card border border-samt-border hover:border-samt-blue transition-all p-8 rounded-2xl flex flex-col justify-between group shadow-lg">
+          <div>
+            <div class="text-xs font-bold text-samt-green uppercase tracking-wider mb-2 font-poppins">Pillar 3 • Enterprise</div>
+            <h3 class="text-2xl font-bold text-white mb-4 font-poppins group-hover:text-samt-blue transition-colors">Tailored Consulting &amp; Fulfillment</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Bespoke growth strategy and turnkey operational execution from a single source: CRM architecture, autonomous AI workflows &amp; sales team hiring.
+            </p>
+          </div>
+          <a href="enterprise.html" class="inline-flex items-center justify-center bg-white/10 hover:bg-samt-blue hover:text-white text-white font-semibold text-xs py-3 px-4 rounded-xl transition-all font-poppins">
+            Inquire About Enterprise →
+          </a>
+        </div>
+
+        <!-- Pillar 4 -> Connected to performance.html -->
+        <div class="bg-samt-card border border-samt-border hover:border-samt-blue transition-all p-8 rounded-2xl flex flex-col justify-between group shadow-lg">
+          <div>
+            <div class="text-xs font-bold text-samt-blue uppercase tracking-wider mb-2 font-poppins">Pillar 4 • Ads &amp; Scale</div>
+            <h3 class="text-2xl font-bold text-white mb-4 font-poppins group-hover:text-samt-blue transition-colors">Performance Ads &amp; Price Calculator</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Google &amp; LinkedIn Ads with Clarity session tracking. Choose between 50% profit share or our transparent price calculator (from €2,000 minimum ad spend).
+            </p>
+          </div>
+          <a href="performance.html" class="inline-flex items-center justify-center bg-white/10 hover:bg-samt-blue hover:text-white text-white font-semibold text-xs py-3 px-4 rounded-xl transition-all font-poppins">
+            Calculate Performance →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section "About Us" (index.html#ueber-uns) -->
+  <section id="ueber-uns" class="py-24 px-6 sm:px-12 max-w-7xl mx-auto border-t border-samt-border">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-5">
+        <span class="text-xs font-bold text-samt-blue uppercase tracking-widest font-poppins">Experience &amp; B2B Scaling Since 2016</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-poppins text-white tracking-tight mt-3 mb-6">
+          About SAMT AG: From High-Stakes Proprietary Operations to Leading B2B Partner
+        </h2>
+        <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            SAMT AG has been active since 2016 as a Swiss stock corporation (AG) incorporated under Swiss law and domiciled in Switzerland. The foundation of our sales excellence lies in demanding real-world execution: our systematic B2B client acquisition and high-precision outbound methodology were originally developed, built, and perfected exclusively for our own proprietary operations in <strong>Capital Introduction and institutional capital raising</strong>.
+          </p>
+          <p>
+            Out of this experience dealing with complex C-level decision-makers, strict regulatory frameworks, and sophisticated B2B offerings, a reproducible, data-driven system emerged. Driven by growing demand across the DACH mid-market, we standardized this methodology: today, SAMT AG packages this know-how into self-paced training courses, collaborative consulting programs, and turnkey enterprise fulfillment.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 space-y-6">
+        <!-- The Existing Client Dilemma -->
+        <div class="bg-samt-card border border-samt-border p-8 rounded-2xl">
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center text-amber-400 font-poppins">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            The Existing-Client Dilemma
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Many established service providers and agencies remain in a deceptive comfort zone, relying primarily on existing clients. Yet commercial reality shows: over the years, existing accounts tie up substantial resources, increasingly demand discounts, and often generate lower-margin follow-up projects. Companies looking to scale profitably or defend their margins cannot merely manage existing accounts—they must consistently focus on acquiring high-margin A-grade clients.
+          </p>
+        </div>
+
+        <!-- Outbound Selling as a Make-or-Break Factor -->
+        <div class="bg-samt-card border border-samt-border p-8 rounded-2xl">
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center text-samt-green font-poppins">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            Outbound Telephony as a “Make-or-Break” Survival Factor
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            In today's market environment, passively hoping for word-of-mouth referrals or unpredictable inbound leads is no longer enough. A predictable sales pipeline is the decisive survival factor (“Make or Break”): you need a continuous flow of new clients to grow predictably and enforce true pricing power. Targeted outbound calling delivers exactly those clients—enabling you to proactively and systematically approach the most lucrative accounts rather than waiting for whoever happens to inquire.
+          </p>
+          <div class="p-4 bg-samt-navyDark/90 border border-samt-green/30 rounded-xl text-xs text-samt-green leading-relaxed">
+            <strong>Exponential Leverage on Net Profitability:</strong> When a business acquires more—or significantly higher-margin—new clients through structured outbound calling on top of an existing fixed cost base, almost every additional euro of gross profit flows directly into net profit.
+          </div>
+        </div>
+
+        <!-- Legal notice -->
+        <p class="text-xs text-slate-500 leading-relaxed">
+          SAMT AG is a Swiss stock corporation (AG) under Swiss law domiciled in Switzerland. Within the scope of its current consulting, training, and sales services, SAMT AG is not subject to FINMA supervision and does not act as an asset manager.
+        </p>
+
+        <div>
+          <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="inline-flex items-center text-sm font-bold text-samt-blue hover:text-samt-blueHover transition-colors font-poppins">
+            Schedule a Call with Executive Management →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Call to Action -->
+  <section class="py-20 px-6 bg-gradient-to-t from-samt-navyDark to-samt-navy border-t border-samt-border text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-poppins text-white mb-4">
+        Ready for Predictable B2B Growth?
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+        Let us evaluate in a 30-minute strategy call which pillar offers the greatest growth leverage for your company.
+      </p>
+      <a href="https://calendar.app.google/zPS2yERXuhWTopxi8" target="_blank" rel="noopener" class="inline-flex items-center bg-samt-blue hover:bg-samt-blueHover text-white font-bold text-base px-8 py-4 rounded-full shadow-xl shadow-samt-blue/30 transition-all transform hover:-translate-y-1 font-poppins">
+        Book a Strategy Call (Google Calendar)
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  
+<footer class="bg-samt-navyDark border-t border-samt-border pt-16 pb-12 px-6 sm:px-12 text-slate-400">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+    <div>
+      <div class="flex items-center space-x-3 mb-3">
+        <img src="https://samt.ag/wp-content/uploads/samt-ag-light-logo.png" alt="SAMT AG" class="h-8 w-auto object-contain" />
+      </div>
+      <p class="text-sm text-slate-400 max-w-lg leading-relaxed">
+        Systematic B2B sales scaling, CRM technology &amp; performance growth across the entire DACH region and beyond.
+      </p>
+      <p class="text-xs text-slate-500 mt-3 flex flex-wrap items-center gap-2">
+        <span>Support via website chat widget or exclusive WhatsApp group</span>
+        <span>•</span>
+        <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="text-samt-blue hover:underline">samt.learnhouse.io</a>
+      </p>
+    </div>
+    
+    <div class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-300 font-medium">
+      <a href="akademie.html" class="hover:text-samt-blue transition">Academy</a>
+      <a href="consulting.html" class="hover:text-samt-blue transition">Business Club</a>
+      <a href="enterprise.html" class="hover:text-samt-blue transition">Enterprise</a>
+      <a href="performance.html" class="hover:text-samt-blue transition">Ads &amp; Performance</a>
+      <a href="index.html#ueber-uns" class="hover:text-samt-blue transition">About Us</a>
+      <a href="https://samt.learnhouse.io/" target="_blank" rel="noopener" class="hover:text-samt-blue transition">Login</a>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+    <div>© 2025 SAMT AG. All rights reserved. | B2B Consulting &amp; Fulfillment since 2016</div>
+    <div class="flex items-center space-x-6">
+      <a href="#impressum" class="hover:text-slate-300 transition">Imprint</a>
+      <a href="#agb" class="hover:text-slate-300 transition">Terms</a>
+      <a href="#datenschutz" class="hover:text-slate-300 transition">Privacy</a>
+      <a href="#compliance" class="hover:text-slate-300 transition">Compliance</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
