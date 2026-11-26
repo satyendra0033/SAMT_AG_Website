@@ -90,7 +90,7 @@
       <span class="text-slate-400 hidden sm:inline">5 Verbundene Hauptseiten (DACH)</span>
     </div>
     <div class="flex items-center space-x-1 sm:space-x-2">
-      <a href="index.html" class="px-2.5 py-1 rounded-md transition-all bg-samt-blue text-white font-bold shadow">1. Startseite</a>
+      <a href="./" class="px-2.5 py-1 rounded-md transition-all bg-samt-blue text-white font-bold shadow">1. Startseite</a>
       <a href="akademie.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">2. Akademie</a>
       <a href="consulting.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">3. Club</a>
       <a href="enterprise.html" class="px-2.5 py-1 rounded-md transition-all text-slate-300 hover:text-white hover:bg-white/10">4. Enterprise</a>
@@ -103,7 +103,7 @@
 <header class="w-full relative z-50 bg-samt-navy/80 backdrop-blur-md border-b border-white/10 px-6 lg:px-12 py-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Brand Logo: Official light logo from samt.ag -->
-    <a href="index.html" class="flex items-center space-x-3 group">
+    <a href="./" class="flex items-center space-x-3 group">
       <img src="https://samt.ag/wp-content/uploads/samt-ag-light-logo.png" alt="SAMT AG" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" />
     </a>
 
@@ -129,11 +129,11 @@
           <span class="text-[10px] leading-none">▼</span>
         </button>
         <div id="langDropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-[#f9f6f0] rounded-xl shadow-2xl overflow-hidden z-50 border border-black/10">
-          <a href="index.html" class="flex items-center px-4 py-3 text-sm bg-[#f5efe2] border-b border-black/5 transition-colors">
+          <a href="./" class="flex items-center px-4 py-3 text-sm bg-[#f5efe2] border-b border-black/5 transition-colors">
             <span class="text-xs font-bold text-[#c6922c] w-7">DE</span>
             <span class="font-bold text-[#c6922c]">Deutsch</span>
           </a>
-          <a href="en/index.html" class="flex items-center px-4 py-3 text-sm bg-white hover:bg-[#f5efe2]/60 transition-colors">
+          <a href="en" class="flex items-center px-4 py-3 text-sm bg-white hover:bg-[#f5efe2]/60 transition-colors">
             <span class="text-xs font-bold text-[#5a6a85] w-7">GB</span>
             <span class="font-medium text-[#1e293b]">English</span>
           </a>
@@ -148,6 +148,10 @@
   </div>
 </header>
 <script>
+  if (window.location.pathname.endsWith('/index.html')) {
+    const cleanPath = window.location.pathname.replace(/\/index\.html$/, '') || '/';
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+  }
   document.addEventListener('click', function(e) {
     const container = document.getElementById('langDropdownContainer');
     const menu = document.getElementById('langDropdownMenu');
